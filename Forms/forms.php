@@ -3,9 +3,6 @@
 
 class Forms
 {
-    /**
-     * Display the login form
-     */
     public static function loginForm(): void
     {
         echo '
@@ -20,6 +17,28 @@ class Forms
                 <input type="password" id="password" name="password" required>
             </div>
             <button type="submit">Login</button>
+        </form>
+        ';
+    }
+
+    public static function signupForm(): void
+    {
+        echo '
+        <form action="signup_handler.php" method="post" class="form">
+            <h2>Sign Up</h2>
+            <div class="mb-3">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Register</button>
         </form>
         ';
     }
