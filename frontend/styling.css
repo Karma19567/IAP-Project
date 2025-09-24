@@ -77,3 +77,7 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+footer a {
+  color: #4a90e2;
+  text-decoration: none;
+}
